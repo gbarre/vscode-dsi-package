@@ -10,7 +10,9 @@ jobs:
 
     steps:
       - name: test
-        run: ls -la
+        run: |
+          pwd
+          ls -la
       - name: build
         id: build-release
         uses: lannonbr/vsce-action@master
