@@ -27,6 +27,6 @@ before_deploy:
 deploy:
   # deploy to github release
   - provider: releases
-    api_key: "GITHUB_TOKEN"
+    api_key: $GITHUB_TOKEN
     file: "*.vsix"
     skip_cleanup: true
