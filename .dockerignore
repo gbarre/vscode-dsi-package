@@ -1,4 +1,0 @@
-*.vsix
-.gitignore
-Dockerfile
-.dockerignore

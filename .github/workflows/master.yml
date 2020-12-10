@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: test
+        run: ls -la
       - name: build
         id: build-release
         uses: lannonbr/vsce-action@master
