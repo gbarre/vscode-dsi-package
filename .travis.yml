@@ -11,10 +11,6 @@ branches:
   only:
   - master
 
-env:
-  global:
-    - ISPRODTAG=^v?[0-9]+\.[0-9]+\.[0-9]+$
-
 before_install:
 - npm install -g vsce
 
@@ -23,7 +19,7 @@ script:
 
 before_deploy:
   # Set up git user name and tag this commit
-  - git config --local user.name "Guillaume Barré"
+  - git config --local user.name "Guillaume Barre"
   - git config --local user.email "guillaume.barre@ac-versailles.fr"
   - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
   - git tag $TRAVIS_TAG
@@ -31,7 +27,6 @@ before_deploy:
 deploy:
   # deploy to github release
   - provider: releases
-    api_key: "GITHUB OAUTH TOKEN"
-    file_glob: true
+    api_key: "GITHUB_TOKEN"
     file: "*.vsix"
     skip_cleanup: true
