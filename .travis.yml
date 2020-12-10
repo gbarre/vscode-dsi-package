@@ -29,5 +29,5 @@ deploy:
   # deploy to github release
   - provider: releases
     api_key: $GITHUB_TOKEN
-    file: "dsi-versailles-system-0.0.1.vsix"
+    file: "dsi-versailles-system-0.0.3.vsix"
     skip_cleanup: true
