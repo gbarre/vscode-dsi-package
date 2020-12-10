@@ -1,3 +1,6 @@
+env:
+  - PACKAGE_VERSION="0.0.2"
+
 language: node_js
 
 node_js:
@@ -21,13 +24,11 @@ before_deploy:
   # Set up git user name and tag this commit
   - git config --local user.name "Guillaume Barre"
   - git config --local user.email "guillaume.barre@ac-versailles.fr"
-  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-  - git tag $TRAVIS_TAG
-  - ls -la && ls -la ..
+  - git tag v${PACKAGE_VERSION}
 
 deploy:
   # deploy to github release
   - provider: releases
     api_key: $GITHUB_TOKEN
-    file: "dsi-versailles-system-0.0.2.vsix"
+    file: "dsi-versailles-system-${PACKAGE_VERSION}.vsix"
     skip_cleanup: true
