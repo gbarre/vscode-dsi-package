@@ -2,7 +2,7 @@
     "name": "dsi-versailles-system",
     "displayName": "DSI-Versailles-System",
     "description": "Extensions used by the system team.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "gbarre2",
     "repository": "https://github.com/gbarre/vscode-dsi-package",
     "engines": {
