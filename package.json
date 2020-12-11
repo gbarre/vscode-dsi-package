@@ -2,7 +2,7 @@
     "name": "dsi-versailles-system",
     "displayName": "DSI-Versailles-System",
     "description": "Extensions used by the system team.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "gbarre2",
     "repository": "https://github.com/gbarre/vscode-dsi-package",
     "engines": {
@@ -26,6 +26,7 @@
         "eg2.vscode-npm-script",
         "emmanuelbeziat.vscode-great-icons",
         "felipecaputo.git-project-manager",
+        "felipecaputo.vscode-go-gvm",
         "felixfbecker.php-intellisense",
         "formulahendry.auto-close-tag",
         "formulahendry.auto-complete-tag",
