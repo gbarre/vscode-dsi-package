@@ -1,5 +1,5 @@
 env:
-  - PACKAGE_VERSION="0.0.2"
+  - PACKAGE_VERSION="0.0.3"
 
 language: node_js
 
