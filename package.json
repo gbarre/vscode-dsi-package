@@ -2,7 +2,7 @@
     "name": "dsi-versailles-system",
     "displayName": "DSI-Versailles-System",
     "description": "Extensions used by the system team.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "gbarre2",
     "repository": "https://github.com/gbarre/vscode-dsi-package",
     "engines": {
@@ -41,6 +41,7 @@
         "lafe.contextualduplicate",
         "mcright.auto-save",
         "mechatroner.rainbow-csv",
+        "mhutchie.git-graph",
         "mrmlnc.vscode-duplicate",
         "ms-azuretools.vscode-docker",
         "ms-python.python",
