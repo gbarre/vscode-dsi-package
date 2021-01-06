@@ -2,11 +2,11 @@
     "name": "dsi-versailles-system",
     "displayName": "DSI-Versailles-System",
     "description": "Extensions used by the system team.",
-    "version": "0.0.4",
+    "version": "1.0.0",
     "publisher": "gbarre2",
     "repository": "https://github.com/gbarre/vscode-dsi-package",
     "engines": {
-        "vscode": "^1.51.0"
+        "vscode": "^1.52.1"
     },
     "categories": [
         "Extension Packs"
@@ -62,6 +62,7 @@
         "Tino.simple-git-stats",
         "VisualStudioExptTeam.vscodeintellicode",
         "vscode-icons-team.vscode-icons",
+        "yzane.markdown-pdf",
         "yzhang.markdown-all-in-one"
     ]
 }
